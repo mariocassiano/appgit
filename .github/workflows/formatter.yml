@@ -29,5 +29,5 @@ jobs:
         if: steps.mix-cache-format.outputs.cache-hit != 'true'
         run: mix deps.get
 
-      - name: ===> FORMAT
+      - name: ===> Format
         run: mix format --check-formatted
